@@ -23,12 +23,16 @@ The analysis is based on the official Crime Data from 2020 to Present, published
 * **The Demographic Pivot:** A persistent structural shift exists in violent victimization based on age and gender. Females under the age of 50 face a significantly higher relative probability of a crime being violent. From age 51 onwards, the dynamic inverts, and males become disproportionately more likely to experience violence.
 
 ## Prerequisites & Libraries
-The analysis is written in Python 3. The following libraries are required:
-* `pandas` - Data manipulation and cleaning
-* `numpy` - Numerical operations
-* `scipy` - Statistical tests
-* `statsmodels` - Multiple testing corrections (`multipletests`) and regression modeling
-* `matplotlib` & `seaborn` - Data visualization
+The analysis is written in Python 3 and designed to run in Google Colab. The following libraries and modules are utilized across the project:
+* `requests`, `urllib.request` & `io` - Handling API calls, URL requests, and data streams to fetch the raw dataset.
+* `pdfplumber` - Parsing and text extraction from PDF documents (requires explicit installation: `!pip install pdfplumber -q`).
+* `pandas` - Data manipulation, cleaning, and aggregation.
+* `numpy` - Numerical operations and array handling.
+* `statsmodels` - Formulating regression models (`formula.api`) and applying multiple testing corrections like Bonferroni and FDR (`multipletests`).
+* `scipy` - Conducting statistical hypothesis testing (`scipy.stats` for Chi-Square and Wilcoxon tests).
+* `patsy` - Creating design matrices and defining contrast coding (`Sum` contrasts) for the regression models.
+* `scikit-learn` (`sklearn`) - Evaluating regression model performance using metrics such as Mean Squared Error (MSE) and Mean Absolute Error (MAE).
+* `matplotlib.pyplot` & `seaborn` - Generating statistical graphics, bar plots, and demographic visualizations.
 
 ## How to Run and Reproduce the Analysis
 This project is built to run seamlessly in **Google Colab**. Follow these steps to reproduce the exact findings of our study:
