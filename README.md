@@ -40,7 +40,7 @@ This project is built to run seamlessly in **Google Colab**. Follow these steps 
    * No local data download is required. The first cell in the notebook contains the script to fetch the latest dataset directly from the LA City API via `requests` and `io`.
    * Go to the top menu and select `Runtime` -> `Run all`.
 3. **Execution Time:** 
-   * Note that downloading the raw CSV via the API (over 800,000 rows) might take a few minutes depending on your internet connection and Colab's allocated instance.
+   * Note that downloading the raw CSV via the API (over 1 Million rows) takes appriximatly 4-5 minutes depending on your internet connection and Colab's allocated instance.
 4. **Outputs:** 
    * The notebook will automatically clean the data, print the statistical summaries, output the corrected p-value tables, and generate the comparative bar charts.
 
@@ -49,8 +49,8 @@ This project is built to run seamlessly in **Google Colab**. Follow these steps 
 * `README.md`: Project documentation.
 
 ## Authors
-* [Your Name]
-* [Partner's Name - Ronen]
+* Omer Shriky
+* Ronen Agayev
 
 ---
 *Note: This project was conducted as part of an academic research assignment.*
